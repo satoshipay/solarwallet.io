@@ -1,0 +1,5 @@
+*:8080
+
+basicauth / solar wurstbrot
+templates
+tls off

@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <title>Solar Wallet by SatoshiPay</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous" />
+</head>
+<body>
+  <section class="teaser">
+    <div class="title">
+      <h1>Solar Wallet</h1>
+      <h4>by SatoshiPay</h4>
+    </div>
+  </section>
+
+  <section class="description">
+    Modern Stellar wallet, featuring multi-signature accounts, asset management and more.
+  </section>
+
+  <hr />
+
+  <section class="download">
+    <h2>Download</h2>
+    <div>
+      {{if .Env.DOWNLOAD_URL_MAC}}
+      <a download href="{{.Env.DOWNLOAD_URL_MAC}}" role="button">
+        <i class="fab fa-apple"></i>&nbsp;Mac OS X
+      </a>
+      {{end}}
+    </div>
+    <div>
+      {{if .Env.DOWNLOAD_URL_WINDOWS}}
+      <a download href="{{.Env.DOWNLOAD_URL_WINDOWS}}" role="button">
+        <i class="fab fa-windows"></i>&nbsp;Windows
+      </a>
+      {{end}}
+    </div>
+    <div>
+      {{if .Env.DOWNLOAD_URL_LINUX}}
+      <a download href="{{.Env.DOWNLOAD_URL_LINUX}}" role="button">
+        <i class="fab fa-linux"></i>&nbsp;Linux
+      </a>
+      {{end}}
+    </div>
+  </section>
+</body>
+</html>

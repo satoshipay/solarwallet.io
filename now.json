@@ -1,0 +1,6 @@
+{
+  "alias": "solar.now.sh",
+  "name": "solarwallet",
+  "type": "docker",
+  "version": 1
+}
