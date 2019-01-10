@@ -1,49 +1,107 @@
 <!doctype html>
 <html>
 <head>
-  <title>Solar Wallet by SatoshiPay</title>
   <meta charset="utf-8" />
+  <title>Solar Wallet by SatoshiPay</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="./styles.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous" />
 </head>
 <body>
-  <section class="teaser">
-    <div class="title">
-      <h1>Solar Wallet</h1>
-      <h4>by SatoshiPay</h4>
+  <div class="container my-4">
+    <div class="row">
+      <div class="col-12 col-md">
+        <img src="img/solar-wallet-logo.svg" />
+      </div>
     </div>
+  </div>
+  <section class="container my-4">
+      <div class="row align-items-center">
+          <div class="col-6 col-md">
+            <h1>Stellar made easy. And fast.</h1>
+            <h3>Meet the brand-new Solar wallet</h3>
+            <a href="#download" class="btn btn-lg btn-outline-primary">Download now</a>
+          </div>
+          <div class="col-6 col-md">
+            <img src="img/solar-wallet-stellar-lumens-xlm.png" alt="Solar wallet screenshot" class="img-fluid" />
+          </div>
+      </div>      
   </section>
+  <section class="container my-4">
+      <div class="row">
+          <div class="col-12 col-md">
+              <h2>Modern Stellar wallet, featuring multi-signature accounts, asset management and more.</h2>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-4 col-md">
+              <img src="img/multisig.png" alt="" class="img-fluid" />
+              <h4>Secure, multisignature accounts</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae ligula vel neque congue vulputate.</p>
+          </div>
+          <div class="col-4 col-md">
+              <img src="img/multisig.png" alt="" class="img-fluid" />
+              <h4>Simplified Account Setup</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae ligula vel neque congue vulputate.</p>
+          </div>
+          <div class="col-4 col-md">
+              <img src="img/multisig.png" alt="" class="img-fluid" />
+              <h4>Open Source for Open Minds</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae ligula vel neque congue vulputate.</p>
+          </div>
 
-  <section class="description">
-    Modern Stellar wallet, featuring multi-signature accounts, asset management and more.
+        </div>      
   </section>
-
-  <hr />
-
-  <section class="download">
-    <h2>Download</h2>
-    <div>
-      {{if .Env.DOWNLOAD_URL_MAC}}
-      <a download href="{{.Env.DOWNLOAD_URL_MAC}}" role="button">
-        <i class="fab fa-apple"></i>&nbsp;Mac OS X
-      </a>
-      {{end}}
-    </div>
-    <div>
-      {{if .Env.DOWNLOAD_URL_WINDOWS}}
-      <a download href="{{.Env.DOWNLOAD_URL_WINDOWS}}" role="button">
-        <i class="fab fa-windows"></i>&nbsp;Windows
-      </a>
-      {{end}}
-    </div>
-    <div>
-      {{if .Env.DOWNLOAD_URL_LINUX}}
-      <a download href="{{.Env.DOWNLOAD_URL_LINUX}}" role="button">
-        <i class="fab fa-linux"></i>&nbsp;Linux
-      </a>
-      {{end}}
-    </div>
+  <section id="download" class="container my-4">
+      <div class="row">
+          <div class="col-12 col-md">
+              <h2>Download now</h2>
+          </div>
+      </div>
+      <div class="row">
+          <a href="#" target="blank" class="btn btn-gray-medium-border download">
+            <div style="background-image: url('/images/icon-macos.svg'); width: 2em; height: 1em;" class="icon left"></div>
+            <div class="text-left">
+              <small>Available for</small>
+              <h5>Mac OS X</h6>
+            </div>
+          </a>
+          <a href="#" target="blank" class="btn btn-gray-medium-border download">
+            <div style="background-image: url('/images/icon-macos.svg'); width: 2em; height: 1em;" class="icon left"></div>
+            <div class="text-left">
+              <small>Available for</small>
+              <h5>Mac OS X</h6>
+            </div>
+          </a>
+          <a href="#" target="blank" class="btn btn-gray-medium-border download">
+            <div style="background-image: url('/images/icon-macos.svg'); width: 2em; height: 1em;" class="icon left"></div>
+            <div class="text-left">
+              <small>Available for</small>
+              <h5>Mac OS X</h6>
+            </div>
+          </a>
+          <a href="#" target="blank" class="btn btn-gray-medium-border download">
+            <div style="background-image: url('/images/icon-macos.svg'); width: 2em; height: 1em;" class="icon left"></div>
+            <div class="text-left">
+              <small>Available for</small>
+              <h5>Mac OS X</h6>
+            </div>
+          </a>
+          <a href="#" target="blank" class="btn btn-gray-medium-border download">
+            <div style="background-image: url('/images/icon-macos.svg'); width: 2em; height: 1em;" class="icon left"></div>
+            <div class="text-left">
+              <small>Available for</small>
+              <h5>Mac OS X</h6>
+            </div>
+          </a>
+        </div>      
   </section>
+  <footer class="pt-4 my-md-5 pt-md-5 border-top">
+      <div class="row">
+          <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
+
+          Imprint, T&C, Contact
+        </div>
+    </footer>
 </body>
-</html>
