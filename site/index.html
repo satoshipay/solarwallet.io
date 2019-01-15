@@ -96,18 +96,24 @@
     <div class="row my-5 pt-5">
       <div class="col-12 col-md">
         <h2 class="text-center">Download now</h2>
-        <h4 class="text-center">First version is out now. Mobile coming soon.</h4>      
+        <h4 class="text-center">First version is out now. Mobile coming soon.</h4> 
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+            <strong>Download started.</strong> During installation, you may see a security warning (app is from an "unverified developer"). This can be ignored. We're working on fixing this issue.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>     
       </div>
     </div>
     <div class="row mt-5 justify-content-center">
-      <a href="#" target="blank" class="btn btn--download d-inline-flex align-items-center m-4">
+      <a href="https://s3.eu-central-1.amazonaws.com/solarwallet.io/Solar+Wallet-0.14.0.dmg" target="blank" class="btn btn--download d-inline-flex align-items-center m-4">
         <img src="./img/apple.svg" class="img-fluid mr-4" />
         <div class="text-left">
           <small>Download for</small>
           <h5>macOS</h6>
         </div>
       </a>
-      <a href="#" target="blank" class="btn btn--download d-inline-flex align-items-center m-4">
+      <a href="https://s3.eu-central-1.amazonaws.com/solarwallet.io/Solar+Wallet+Setup+0.14.0.exe" target="blank" class="btn btn--download d-inline-flex align-items-center m-4">
         <img src="./img/windows.svg" class="img-fluid mr-4" />
         <div class="text-left">
           <small>Download for</small>
@@ -162,5 +168,14 @@
       </div>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function(){
+    $('.btn--download').click(function(){
+        $('.alert').show()
+    }) 
+});
+  </script>
 </body>
 </html>

@@ -112,3 +112,7 @@ a:hover, a:focus, a:active {
   text-transform: initial;
 }
 
+/* Alerts */
+.alert {
+  display: none;
+}
