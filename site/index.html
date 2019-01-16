@@ -97,7 +97,7 @@
       <div class="col-12 col-md">
         <h2 class="text-center">Download now</h2>
         <h4 class="text-center">First version is out now. Mobile coming soon.</h4> 
-        <div class="alert alert-info alert-dismissible fade show" role="alert">
+        <div class="alert alert-info alert-dismissible alert--download fade show" role="alert">
             <strong>Download started.</strong> During installation, you may see a security warning (app is from an "unverified developer"). This can be ignored. We're working on fixing this issue.
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
               <span aria-hidden="true">&times;</span>
@@ -154,26 +154,28 @@
   </section>
 
   <footer class="container pt-4 my-md-5 pt-md-5 border-top">
-    <div class="row">
-      <div class="col-12 col-md text-center">
-        <ul class="list-inline">
-          <li class="list-inline-item"><a href="./imprint.html">Imprint</a></li>        
-          <li class="list-inline-item"><a href="mailto:hello@solarwallet.io">hello@solarwallet.io</a></li>
-        </ul>
+      <div class="row">
+        <div class="col-12 col-md text-center">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="./imprint.html">Imprint</a></li>
+            <li class="list-inline-item"><a href="./terms.html">Terms of Use</a></li>
+            <li class="list-inline-item"><a href="./privacy.html">Privacy</a></li>
+            <li class="list-inline-item"><a href="mailto:hello@solarwallet.io">solarwallet@satoshipay.io</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-12 col-md text-center">
-        <small class="d-block mb-3 text-muted">&copy; 2019</small>
+      <div class="row">
+        <div class="col-12 col-md text-center">
+          <small class="d-block mb-3 text-muted">&copy; 2019</small>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script>
   $(document).ready(function(){
     $('.btn--warning').click(function(){
-        $('.alert').show()
+        $('alert--download').show()
     }) 
 });
   </script>
