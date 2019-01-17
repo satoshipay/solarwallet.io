@@ -9,6 +9,10 @@
    width: 116px;
  }
 
+ .twitter {
+   height: 20px;
+ }
+
 /* typography */
 h1,h2,h3 {
   font-family: 'Nunito', sans-serif;
