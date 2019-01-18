@@ -1,5 +1,6 @@
 {
   "alias": "solarwallet.io",
   "name": "solarwallet",
-  "version": 2
+  "type": "static",
+  "version": 1
 }
