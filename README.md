@@ -17,7 +17,7 @@ npm run deploy
 
 It will print the immutable deployment URL and copy it to the clipboard.
 
-To make this new deployment available as `solar.now.sh`, run:
+To make this new deployment available as `solarwallet.io`, run:
 
 ```sh
 now alias
@@ -33,3 +33,4 @@ now ls
 ```sh
 now alias ls
 ```
+

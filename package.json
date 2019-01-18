@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "deploy": "source .env && now deploy -e DOWNLOAD_URL_LINUX=\"$DOWNLOAD_URL_LINUX\" -e DOWNLOAD_URL_MAC=\"$DOWNLOAD_URL_MAC\" -e DOWNLOAD_URL_WINDOWS=\"$DOWNLOAD_URL_WINDOWS\" .",
-    "dev": "docker run --rm -p 8080:8080 --env-file .env -v $(pwd)/Caddyfile:/etc/Caddyfile -v $(pwd)/site:/srv abiosoft/caddy:0.11.1"
-  }
+    "deploy": "now deploy .",
+    "dev": "npx serve ."
+  },
+  "dependencies": {}
 }
