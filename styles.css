@@ -12,6 +12,11 @@
  .twitter {
    height: 20px;
  }
+ 
+ .satoshipay {
+   height: 18px;
+   margin-top: -2px;
+ }
 
 /* typography */
 h1,h2,h3 {
