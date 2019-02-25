@@ -20,7 +20,7 @@ It will print the immutable deployment URL and copy it to the clipboard.
 To make this new deployment available as `solarwallet.io`, run:
 
 ```sh
-now alias
+now alias solarwalletio-<Deployment ID> solarwallet.io
 ```
 
 
