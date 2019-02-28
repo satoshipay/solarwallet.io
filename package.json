@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "deploy": "now deploy .",
+    "deploy": "now deploy --public .",
     "dev": "npx serve ."
   },
   "dependencies": {}
