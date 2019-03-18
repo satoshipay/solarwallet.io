@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "deploy": "now deploy --public .",
+    "deploy": "now deploy --public --scope=solar .",
+    "deploy:www-redirect": "cd redirect/ && now deploy --public --scope=solar .",
     "dev": "npx serve ."
   },
   "dependencies": {}

@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "alias": [
+    "www.solarwallet.io"
+  ],
+  "name": "solarwallet-www-redirect",
+  "routes": [
+    {
+      "src": "/(.*)",
+      "status": 301,
+      "headers": {
+        "Location": "https://solarwallet.io/$1"
+      }
+    }
+  ]
+}
