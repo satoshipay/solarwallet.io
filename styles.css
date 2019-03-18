@@ -12,24 +12,25 @@
  .twitter {
    height: 20px;
  }
- 
+
  .satoshipay {
    height: 18px;
    margin-top: -2px;
  }
 
 /* typography */
-h1,h2,h3 {
+h1, h2, h3, .h1, .h2, .h3 {
   font-family: 'Nunito', sans-serif;
   color: #4A4A4A;
 }
 
-h1,h2 {
+h1, h2, .h1, .h2 {
   font-size: 1.8rem;
   font-weight: 700;
 }
 
-h4 {
+h4, .h4 {
+  font-family: inherit;
   font-size: 1.1rem;
   font-weight: 300;
 }
@@ -68,7 +69,7 @@ a:hover, a:focus, a:active {
   -webkit-transition: all 0.15s ease-in-out;
   -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
   -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);  
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
 }
 
 .btn--get {
@@ -124,4 +125,8 @@ a:hover, a:focus, a:active {
 /* Alerts */
 .alert--download {
   display: none;
+}
+
+.height72 {
+  height: 72px;
 }
