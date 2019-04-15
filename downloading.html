@@ -103,10 +103,22 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script>
     $(document).ready(function () {
-      $('.btn--warning').click(function () {
-        $('alert--download').show()
-      })
-    });
+      const getParam = window.location.search.split(name + '=')[1];
+
+      if (getParam === "ios") {
+        $(location).attr('href', 'https://github.com/satoshipay/solar/releases/download/v0.18.1/Solar.Wallet-0.18.1.dmg')
+      }
+
+      if (getParam === "windows") {
+        $(location).attr('href', 'https://github.com/satoshipay/solar/releases/download/v0.18.1/Solar.Wallet.Setup.0.18.1.exe')
+      }
+
+      if (getParam === "linux") {
+        window.location.replace("https://github.com/satoshipay/solar/releases/latest");
+      }
+
+      return false
+    });  
   </script>
 </body>
 
