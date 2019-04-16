@@ -103,7 +103,7 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script>
     $(document).ready(function () {
-      const getParam = window.location.search.split(name + '=')[1];
+      const getParam = window.location.search.split('=')[1];
 
       if (getParam === "ios") {
         $(location).attr('href', 'https://github.com/satoshipay/solar/releases/download/v0.18.1/Solar.Wallet-0.18.1.dmg')
