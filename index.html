@@ -17,6 +17,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Solar Wallet by SatoshiPay - Simple and Secure Stellar Wallet</title>
   <meta name="description" content="Solar wallet - Blazingly fast, business-friendly, multi-signature Stellar wallet. 100% free and open source. Download the desktop app. Android & iOS coming soon.">
+  <link rel="canonical" href="https://solarwallet.io/">
   <!-- / Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -57,9 +58,10 @@
   <section class="container my-5">
     <div class="row align-items-center">
       <div class="col-md-6 text-center text-md-left">
-        <!-- h1 & h4 tags switched for SEO reasons -->
-        <h4 class="h1">Meet Solar</h4>
-        <h1 class="h4">Simple and secure Stellar wallet</h1>
+        <h1>
+          <span class="h1">Meet Solar</span>
+          <span class="h4">Simple and secure Stellar wallet</span>
+        </h1>
         <a href="#download" class="btn btn-lg btn-outline-primary btn--get mt-4 mb-4 mb-md-0">Get wallet now</a>
       </div>
       <div class="col-md-6 text-center text-md-left">
@@ -78,61 +80,77 @@
     <div class="row my-5 pt-5">
       <div class="col-12 col-md">
         <h2 class="text-center">Secure, open, and 100% free</h2>
-        <h4 class="text-center">Stellar wallet featuring multi-signature accounts, asset management, and more</h4>
+        <p class="h4 maxw-800 mx-auto text-center">Solar is a wallet for the Stellar cryptocurrency network, featuring multi-signature accounts, asset management, and more.</p>
       </div>
     </div>
-    <div class="row features my-5 pb-5 align-items-end">
-      <div class="col-md-4 text-center">
+    <div class="row features mt-5 pb-5 align-items-end justify-content-center">
+      <div class="col-md-4 mb-3 text-center">
         <img src="./img/multisig.svg" alt="Multi-sig Stellar wallet" class="img-fluid mb-4" />
-        <h4>Secure multi-sig accounts</h4>
+        <h3>Secure multi-sig accounts</h3>
         <p class="height72">Enable multi-signature authorization for enterprise-grade security in just a few clicks.</p>
       </div>
-      <div class="col-md-4 text-center">
+      <div class="col-md-4 mb-3 text-center">
         <img src="./img/easy-user-account.svg" alt="User account" class="img-fluid mb-4" />
-        <h4>Simplified account setup</h4>
+        <h3>Simplified account setup</h3>
         <p class="height72">Create and protect an account in seconds. Solar is bringing smooth UX to Stellar.</p>
       </div>
-      <div class="col-md-4 text-center">
+      <div class="col-md-4 mb-3 text-center">
         <img src="./img/opensource.svg" alt="Open source" class="img-fluid mb-4" />
-        <h4>Open source for full transparency</h4>
-        <p class="height72">The code is published under the GPL license so anybody can audit.</p>
+        <h3>Open source for full transparency</h3>
+        <p class="height72">The code is published on GitHub under the GPL license so anyone can audit it.</p>
       </div>
-
+    </div>
+    <div class="row features mb-5 align-items-end justify-content-center">
+      <div class="col-md-6 mb-4 px-5 text-center">
+        <h3>Third-party assets</h3>
+        <p class="height72">Apart from Stellar lumens (XLM), we treat USD, EURT, etc. on the network as first-class citizens.</p>
+      </div>
+      <div class="col-md-6 mb-4 px-5 text-center">
+        <h3>Decentralized exchange</h3>
+        <p class="height72">Trade assets with ease: Convert XLM to USD, sell them for EUR. Without any additional fees.</p>
+      </div>
+      <div class="col-md-6 mb-4 px-5 text-center">
+        <h3>Full control</h3>
+        <p class="height72">Securely encrypted key storage on your local device. Import and export anytime.</p>
+      </div>
+      <div class="col-md-6 mb-4 px-5 text-center">
+        <h3>Issue Tracker</h3>
+        <p class="height72">Find our issue tracker at the GitHub repository. Report bugs, see what we are working on or share your ideas.</p>
+      </div>
+      <div class="col-md-5 mb-4 px-3 text-center">
+        <h3 class="text-nowrap">Friendly user interface</h3>
+        <p class="height72">We try to make Stellar simple. Meet a clean UI and expressive design.</p>
+      </div>
     </div>
   </section>
   <section id="download" class="container my-5">
     <div class="row my-5 pt-5">
       <div class="col-12 col-md">
         <h2 class="text-center">Download now</h2>
-        <h4 class="text-center">Beta version is out now. Mobile apps coming soon.</h4>
-        <div class="alert alert-info alert-dismissible alert--download fade show" role="alert">
-          <strong>Download started.</strong> During installation, you may see a security warning (app is from an
-          "unverified developer"). This can be ignored. We're working on fixing this issue.
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
+        <p class="h4 text-center">
+          Download the beta version of the Solar wallet now. Mobile apps for Android and iOS are coming soon.
+        </p>
       </div>
     </div>
     <div class="row mt-5 justify-content-center">
       <a href="https://github.com/satoshipay/solar/releases/download/v0.18.1/Solar.Wallet-0.18.1.dmg" class="btn btn--download btn--warning d-inline-flex align-items-center m-4" id="macOS">
         <img src="./img/apple.svg" alt="Apple MacOS" class="img-fluid mr-4" />
         <div class="text-left">
-          <small>Download for</small>
+          <small>Solar for</small>
           <h5>macOS</h6>
         </div>
       </a>
       <a href="https://github.com/satoshipay/solar/releases/download/v0.18.1/Solar.Wallet.Setup.0.18.1.exe" class="btn btn--download btn--warning d-inline-flex align-items-center m-4" id="Windows">
         <img src="./img/windows.svg" alt="Microsoft Windows" class="img-fluid mr-4" />
         <div class="text-left">
-          <small>Download for</small>
+          <small>Solar for</small>
           <h5>Windows</h6>
         </div>
       </a>
       <a href="https://github.com/satoshipay/solar/releases/latest" class="btn btn--download d-inline-flex align-items-center m-4" id="Linux">
         <img src="./img/linux.svg" alt="Linux" class="img-fluid mr-4" />
         <div class="text-left">
-          <small>Download for</small>
+          <small>Solar for</small>
           <h5>Linux</h6>
         </div>
       </a>
@@ -166,16 +184,16 @@
     <div class="row">
       <div class="col-12 col-md text-center">
         <ul class="list-inline">
-          <li class="list-inline-item"><a href="./imprint.html">Imprint</a></li>
-          <li class="list-inline-item"><a href="./terms.html">Terms of Use</a></li>
-          <li class="list-inline-item"><a href="./privacy.html">Privacy</a></li>
+          <li class="list-inline-item"><a href="./imprint">Imprint</a></li>
+          <li class="list-inline-item"><a href="./terms">Terms of Use</a></li>
+          <li class="list-inline-item"><a href="./privacy">Privacy</a></li>
         </ul>
       </div>
     </div>
     <div class="row">
       <div class="col-12 mb-3 text-center">
         <a href="https://twitter.com/solar_wallet">
-          <img src="./img/twitter.svg" alt="Twitter Logo" class="twitter" />@Solar_Wallet</a>
+          <img src="./img/twitter.svg" alt="Twitter Logo" class="twitter" />&nbsp;&nbsp;@Solar_Wallet</a>
       </div>
     </div>
     <div class="row">
@@ -189,17 +207,10 @@
       </div>
     </div>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  <script async src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script>
-    $(document).ready(function () {
-      $('.btn--warning').click(function () {
-        $('alert--download').show()
-      })
-    });
-  </script>
 </body>
 
 </html>

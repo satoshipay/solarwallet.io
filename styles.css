@@ -25,12 +25,14 @@ h1, h2, h3, .h1, .h2, .h3 {
 }
 
 h1, h2, .h1, .h2 {
+  display: block;
   font-size: 1.8rem;
   font-weight: 700;
 }
 
 h4, .h4 {
-  font-family: inherit;
+  display: block;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   font-size: 1.1rem;
   font-weight: 300;
 }
@@ -109,7 +111,7 @@ a:hover, a:focus, a:active {
 }
 
 /* sections */
-.features h4 {
+.features h3 {
   font-weight: 700;
 }
 
@@ -129,4 +131,8 @@ a:hover, a:focus, a:active {
 
 .height72 {
   height: 72px;
+}
+
+.maxw-800 {
+  max-width: 800px;
 }
