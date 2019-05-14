@@ -5,9 +5,12 @@
 Install
 
 ```sh
-> npm install
-
-> gulp stream
-
+npm install
 ```
+
+```sh
+gulp watch
+```
+
+
 

@@ -20,7 +20,7 @@ return gulp.src('./_views/*.pug')
 .pipe(gulp.dest('./site/'));
 });
 
-gulp.task('stream', function () {
+gulp.task('watch', function () {
   gulp.watch('./_styles/**/*.scss', gulp.series('sass'));
   gulp.watch('./_views/*.pug', gulp.series('pug'));
 });
