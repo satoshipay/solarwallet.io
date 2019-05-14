@@ -2,12 +2,14 @@
 
 ## Setup
 
-Install
+### Install
 
 ```sh
 npm install
 ```
 
+### Run dev mode
+ 
 ```sh
 gulp watch
 ```
