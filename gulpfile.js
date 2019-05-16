@@ -18,11 +18,29 @@ gulp.task('pug',function() {
         pretty: false
     }))
     .pipe(gulp.dest('./site/'));
-  });
+});
+
+gulp.task('favicons', function() {
+  return gulp.src('./_assets/favicons/**.*')
+    .pipe(gulp.dest('./site/'));
+});
+
+gulp.task('img', function() {
+  return gulp.src('./_assets/img/**.*')
+    .pipe(gulp.dest('./site/img/'));
+});
+
+gulp.task('misc', function() {
+  return gulp.src('./_misc/**.*')
+    .pipe(gulp.dest('./site/'));
+});
 
 gulp.task('watch', function () {
   gulp.watch('./_styles/**/*.scss', gulp.series('sass'));
   gulp.watch('./_views/*.pug', gulp.series('pug'));
+  gulp.watch('./_assets/favicons/**.*', gulp.series('favicons'));
+  gulp.watch('./_assets/img/**.*', gulp.series('img'));
+  gulp.watch('./_misc/**.*', gulp.series('misc'));
 });
 
-gulp.task('build', gulp.parallel('pug', 'sass'));
+gulp.task('build', gulp.parallel('pug', 'sass', 'favicons', 'img', 'misc'));

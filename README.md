@@ -14,6 +14,8 @@ npm install
 gulp watch
 ```
 
+Gulp will compile all files to `site` directory. 
+
 ### Build
 ```sh
 gulp build
@@ -22,6 +24,6 @@ gulp build
 
 ## Deploy
 
-`welcome-pug` branh is deployed via Netlify
+`site` directory on `welcome-pug` branch is deployed via Netlify. 
 
 
