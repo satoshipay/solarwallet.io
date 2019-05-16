@@ -1,36 +1,29 @@
 # Solar Wallet Website
 
-## Setup
+## Local development
 
-Make sure to install the `now` CLI and login:
+### Install
 
 ```sh
-npm i -g now
-now login andy@satoshipay.io
+npm install
 ```
+
+### Run dev mode
+ 
+```sh
+gulp watch
+```
+
+Gulp will compile all files to `site` directory. 
+
+### Build
+```sh
+gulp build
+```
+
 
 ## Deploy
 
-```sh
-npm run deploy
-```
+`site` directory on `welcome-pug` branch is deployed via Netlify. 
 
-It will print the immutable deployment URL and copy it to the clipboard.
-
-To make this new deployment available as `solarwallet.io`, run:
-
-```sh
-now alias solarwalletio-<Deployment ID> solarwallet.io
-```
-
-
-## Manage deployments
-
-```sh
-now ls
-```
-
-```sh
-now alias ls
-```
 
