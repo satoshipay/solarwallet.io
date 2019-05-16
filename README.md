@@ -2,7 +2,7 @@
 
 ## Local development
 
-### Install
+### Install
 
 ```sh
 npm install
