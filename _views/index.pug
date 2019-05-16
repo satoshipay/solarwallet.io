@@ -38,40 +38,46 @@ block content
     .row.my-5.pt-5
       .col-12.col-md
         h2.text-center Download now
+        h4.text-center Beta version is out now. Mobile apps coming soon.
+        .alert.alert-info.alert-dismissible.alert--download.fade.show(role='alert')
+          strong Download started.
+          |  During installation, you may see a security warning (app is from an
+          |           &quot;unverified developer&quot;). This can be ignored. We&apos;re working on fixing this issue.
+          button.close(type='button' data-dismiss='alert' aria-label='Close')
+            span(aria-hidden='true') &times;
     .row.mt-5.justify-content-center
-      a#macOS.btn.btn--download.btn--warning.d-inline-flex.align-items-center.m-4(href='https://github.com/satoshipay/solar/releases/download/v0.18.2/Solar.Wallet-0.18.2.dmg')
+      a#macOS.btn.btn--download.btn--warning.d-inline-flex.align-items-center.m-4(href='https://github.com/satoshipay/solar/releases/download/v0.18.2/Solar.Wallet-0.18.2.dmg' rel='nofollow')
         img.img-fluid.mr-4(src='./img/apple.svg' alt='Apple MacOS')
         .text-left
           small Download for
           h5
             | macOS
-      a#Windows.btn.btn--download.btn--warning.d-inline-flex.align-items-center.m-4(href='https://github.com/satoshipay/solar/releases/download/v0.18.2/Solar.Wallet.Setup.0.18.2.exe')
+      a#Windows.btn.btn--download.btn--warning.d-inline-flex.align-items-center.m-4(href='https://github.com/satoshipay/solar/releases/download/v0.18.2/Solar.Wallet.Setup.0.18.2.exe' rel='nofollow')
         img.img-fluid.mr-4(src='./img/windows.svg' alt='Microsoft Windows')
         .text-left
           small Download for
           h5
             | Windows
-      a#Linux.btn.btn--download.d-inline-flex.align-items-center.m-4(href='https://github.com/satoshipay/solar/releases/latest')
+      a#Linux.btn.btn--download.d-inline-flex.align-items-center.m-4(href='https://github.com/satoshipay/solar/releases/latest' rel='nofollow')
         img.img-fluid.mr-4(src='./img/linux.svg' alt='Linux')
         .text-left
           small Download for
           h5
             | Linux
     .row.mb-5.pb-5.justify-content-center
-      a#iOS.btn.btn--download.d-inline-flex.align-items-center.m-4(href='https://testflight.apple.com/join/p3r5gFLC')
+      a#iOS.btn.btn--download.d-inline-flex.align-items-center.m-4(href='https://itunes.apple.com/us/app/solar-stellar-wallet/id1458490218?mt=8' rel='nofollow')
         img.img-fluid.mr-4(src='./img/apple.svg' alt='Apple iOS')
         .text-left
-          small Install beta on
+          small Install on
           h5
             | iOS
-      a#Android.btn.btn--download.d-inline-flex.align-items-center.m-4(href='https://play.google.com/apps/testing/io.solarwallet')
+      a#Android.btn.btn--download.d-inline-flex.align-items-center.m-4(href='https://play.google.com/store/apps/details?id=io.solarwallet' rel='nofollow')
         img.img-fluid.mr-4(src='./img/android.svg' alt='Android')
         .text-left
-          small Install beta on
+          small Install on
           h5
             | Android
   section.container.mt-1.mb-4
     .row
       .col-12.text-center
         a.code-link(href='https://github.com/satoshipay/solar') View code on GitHub &rarr;
-
