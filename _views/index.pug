@@ -1,0 +1,83 @@
+extends ../_layouts/main.pug
+
+block content  
+  section.container.my-5
+    .row.align-items-center
+      .col-md-6.text-center.text-md-left
+        // h1 & h4 tags switched for SEO reasons
+        h4.h1 Meet Solar
+        h1.h4 Simple and secure Stellar wallet
+        a.btn.btn-lg.btn-outline-primary.btn--get.mt-4.mb-4.mb-md-0(href='#download') Get wallet now
+      .col-md-6.text-center.text-md-left
+        img.img-fluid(src='./img/solar-wallet-stellar-lumens-xlm.png' alt='Solar wallet screenshot')
+  section.container.my-5.pt-5
+    .row.my-5
+      .col-12.col-md.text-center
+        a(href='https://docs.solarwallet.io') Go to guide &rarr;
+  section.container.my-5
+    .row.my-5.pt-5
+      .col-12.col-md
+        h2.text-center Secure, open, and 100% free
+        h4.text-center Stellar wallet featuring multi-signature accounts, asset management, and more
+    .row.features.my-5.pb-5.align-items-end
+      .col-md-4.text-center
+        img.img-fluid.mb-4(src='./img/multisig.svg' alt='Multi-sig Stellar wallet')
+        h4 Secure multi-sig accounts
+        p.height72
+          | Enable multi-signature authorization for enterprise-grade security in just a few clicks.
+      .col-md-4.text-center
+        img.img-fluid.mb-4(src='./img/easy-user-account.svg' alt='User account')
+        h4 Simplified account setup
+        p.height72
+          | Create and protect an account in seconds. Solar is bringing smooth UX to Stellar.
+      .col-md-4.text-center
+        img.img-fluid.mb-4(src='./img/opensource.svg' alt='Open source')
+        h4 Open source for full transparency
+        p.height72 The code is published under the GPL license so anybody can audit.
+  section#download.container.my-5
+    .row.my-5.pt-5
+      .col-12.col-md
+        h2.text-center Download now
+        h4.text-center Beta version is out now. Mobile apps coming soon.
+        .alert.alert-info.alert-dismissible.alert--download.fade.show(role='alert')
+          strong Download started.
+          |  During installation, you may see a security warning (app is from an
+          |           &quot;unverified developer&quot;). This can be ignored. We&apos;re working on fixing this issue.
+          button.close(type='button' data-dismiss='alert' aria-label='Close')
+            span(aria-hidden='true') &times;
+    .row.mt-5.justify-content-center
+      a#macOS.btn.btn--download.btn--warning.d-inline-flex.align-items-center.m-4(href='https://github.com/satoshipay/solar/releases/download/v0.18.2/Solar.Wallet-0.18.2.dmg' rel='nofollow')
+        img.img-fluid.mr-4(src='./img/apple.svg' alt='Apple MacOS')
+        .text-left
+          small Download for
+          h5
+            | macOS
+      a#Windows.btn.btn--download.btn--warning.d-inline-flex.align-items-center.m-4(href='https://github.com/satoshipay/solar/releases/download/v0.18.2/Solar.Wallet.Setup.0.18.2.exe' rel='nofollow')
+        img.img-fluid.mr-4(src='./img/windows.svg' alt='Microsoft Windows')
+        .text-left
+          small Download for
+          h5
+            | Windows
+      a#Linux.btn.btn--download.d-inline-flex.align-items-center.m-4(href='https://github.com/satoshipay/solar/releases/latest' rel='nofollow')
+        img.img-fluid.mr-4(src='./img/linux.svg' alt='Linux')
+        .text-left
+          small Download for
+          h5
+            | Linux
+    .row.mb-5.pb-5.justify-content-center
+      a#iOS.btn.btn--download.d-inline-flex.align-items-center.m-4(href='https://itunes.apple.com/us/app/solar-stellar-wallet/id1458490218?mt=8' rel='nofollow')
+        img.img-fluid.mr-4(src='./img/apple.svg' alt='Apple iOS')
+        .text-left
+          small Install on
+          h5
+            | iOS
+      a#Android.btn.btn--download.d-inline-flex.align-items-center.m-4(href='https://play.google.com/store/apps/details?id=io.solarwallet' rel='nofollow')
+        img.img-fluid.mr-4(src='./img/android.svg' alt='Android')
+        .text-left
+          small Install on
+          h5
+            | Android
+  section.container.mt-1.mb-4
+    .row
+      .col-12.text-center
+        a.code-link(href='https://github.com/satoshipay/solar') View code on GitHub &rarr;
