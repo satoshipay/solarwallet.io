@@ -1,6 +1,6 @@
 # Solar Wallet Website
 
-## Setup
+## Local development
 
 ### Install
 
@@ -14,5 +14,14 @@ npm install
 gulp watch
 ```
 
+### Build
+```sh
+gulp build
+```
+
+
+## Deploy
+
+`welcome-pug` branh is deployed via Netlify
 
 
